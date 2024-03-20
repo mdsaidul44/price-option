@@ -34,7 +34,25 @@ const NavBar = () => {
                 routes.map(route=> <Link key={route.id} route={route}></Link> )
             }
            </ul>
+            {/* another navbar
+          <div className="bg-black p-6">
+            <div className="md:hidden text-2xl" onClick={()=> setOpen(!open)}>
+                {
+                    open === true? <AiOutlineClose></AiOutlineClose> : 
+                    <HiMenuAlt1 className=""></HiMenuAlt1>
+                }
+            </div>
+          <div className={`md:flex absolute md:static duration-1000
+           ${open ? 'top-16': '-top-60'}
+           bg-black px-6 `}> 
+             {
+                routes.map(route => <Link key={route.id} route={route}></Link>)
+             }
+           </div>
+          </div> */}
         </nav>
+
+         
     );
 };
 
